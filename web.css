@@ -1,0 +1,142 @@
+
+/**
+*
+**/
+
+
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+    padding: 25px 60px;
+    
+    
+}
+.date{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -5%;
+}
+.card button{
+    background-color: black;
+    font-size: large;
+    color: aliceblue;
+    width: 100%;
+    padding: 5%;
+    cursor: pointer;
+}
+.card  #mybutton:hover{
+    background-color: red;
+}
+.navbar{
+    display: flex;
+    font-size: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;    
+    color: white;
+    padding: 15px 60px;
+    background-image: url('https://merch.deno.com/raindrops-animate.svg');
+    margin-bottom: 30px;
+    
+    
+}
+.cart{
+    position: relative;
+    background-color:white;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    height: 35px;
+}
+.cartamount{
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+}
+
+/**
+*!shop items styles
+**/
+
+.shop{
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+    height: 900px;
+}
+@media(max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+@media(max-width:500px){
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+.item{
+    border: 2px solid #212529;
+    border-radius: 4px;
+    height:397px;
+}
+.details{
+    margin: -20px 0px -25px;
+    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+}
+.about{
+    margin: -35px 0px -25px;
+    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+
+}
+.price-quantity{
+    margin-top: -16px;
+    padding-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #212529;
+    line-height: 4px;
+
+    color: white;
+
+
+}
+.quantity{
+    font-size: 25px;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+.bi-dash-lg{
+    color: red;
+}
+.bi-plus-lg{
+    color: green;
+}
+
+.text{
+    color: white;
+    background-color: #212529;
+    justify-content: center;
+    text-align: center;
+}
